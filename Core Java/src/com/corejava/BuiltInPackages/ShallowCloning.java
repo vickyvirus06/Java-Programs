@@ -13,6 +13,7 @@ public class ShallowCloning {
 		cust1.id=104;
 		cust1.name="vinod";
 		
+		
 		System.out.println(cust1);
 		System.out.println(cust2);
 		

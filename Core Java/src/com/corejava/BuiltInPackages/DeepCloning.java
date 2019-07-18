@@ -1,5 +1,7 @@
 package com.corejava.BuiltInPackages;
 
+
+
 public class DeepCloning {
 
 	public static void main(String[] args) throws CloneNotSupportedException{
@@ -25,8 +27,9 @@ public class DeepCloning {
 			
 			@Override
 			protected Object clone() throws CloneNotSupportedException {
-				Address add = new Address(this.add.add);
-				Student2 student = new Student2(this.id,this.add);
+				//Address add = new Address(this.add.add);
+				
+				Student2 student = new Student2(this.id,(Address)this.add);
 				return student;
 			}
 		};
@@ -106,7 +109,7 @@ class Address
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		
 		return add;
 	}
 	

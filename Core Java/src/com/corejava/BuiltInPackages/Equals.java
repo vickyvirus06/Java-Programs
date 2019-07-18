@@ -41,7 +41,8 @@ class Customer
 	
 	@Override
 	public boolean equals(Object obj) {
-		Customer cust = (Customer)obj;
-		return this.id==cust.id && this.name.equals(cust.name);
+		
+		return this.id==((Customer)obj).id;
+		//return this.id==cust.id && this.name.equals(cust.name);
 	}
 }
