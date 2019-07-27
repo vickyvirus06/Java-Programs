@@ -29,7 +29,7 @@ public class WrapperClass {
 		
 		o.show();
 		
-		String s= "124";
+		String s= "123";
 		System.out.println(Integer.parseInt(s));		
 	}
 
