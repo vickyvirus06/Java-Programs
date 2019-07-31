@@ -15,25 +15,41 @@ public class ExperimentBank {
 class Accounts
 {
 	int bal=2000;
-	void withdraw(int amt)
+	synchronized void withdraw(int amt)
 	{
-		System.out.println("Current Balance is "+bal);
-		bal=bal-amt;
-		System.out.println("Amount to withdraw "+amt);
-		System.out.println("Balance : " +bal);
+		if(amt<=bal)
+		{
+			System.out.println("Current Balance is "+bal);
+			bal=bal-amt;
+			System.out.println("Amount to withdraw "+amt);
+			System.out.println("Balance : " +bal);
+			
+		}
+		else
+		{
+			System.out.println("Insufficient funds");
+		}
+		
+		
+		
 	}
 	
-	void deposit(int amt)
+	synchronized void deposit(int amt)
 	{
 		System.out.println("Current Balance is "+bal);
 		bal=bal+amt;
 		System.out.println("Amount to deposit "+amt);
 		System.out.println("Balance : " +bal);
+		
+		
 	}
 }
 
 class WithdrawThread extends Thread
 {
+	
+	
+	
 	Accounts acc;
 	int amt;
 	WithdrawThread(Accounts acc,int amt)

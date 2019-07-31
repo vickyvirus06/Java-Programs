@@ -41,9 +41,15 @@ public class Calculator {
 class CalculatorDemo
 {
 	
+	void su()
+	{
+		System.out.println("hiii");
+		su();
+	}
 	void sum(int x,int y)
 	{
 		System.out.println("Sum : " +(x+y));
+		
 	}
 	
 	
