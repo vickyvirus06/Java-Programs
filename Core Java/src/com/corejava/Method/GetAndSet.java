@@ -21,6 +21,7 @@ public class GetAndSet {
 		test.setName(input.next());
 		System.out.print("\n Enter id : ");
 		test.setId(input.nextInt());
+		input.close();
 		
 	}
 

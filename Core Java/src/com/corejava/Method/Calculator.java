@@ -32,6 +32,7 @@ public class Calculator {
 		
 		int result = test.sum(answers);
 		System.out.println("Total value is  :  " + result);
+		input.close();
 		
 
 	}

@@ -34,7 +34,7 @@ class DaemonThreadTest
 		Thread th = Thread.currentThread();
 		for(int i=0;i<15;i++)
 		{
-			System.out.println(th.getName()+"\t"+i);
+			System.out.println(th.getName()+"\t"+i+th.isDaemon());
 			
 			try
 			{
