@@ -1,7 +1,7 @@
-package com.CollectionsFramework.Set.LinkedHashSet;
+package com.CollectionsFramework.Set.TreeSet;
 
 import java.util.*;
-public class StudentLinkedHashSet {
+public class StudentTreeSet {
 
 	public static void main(String[] args) {
 		

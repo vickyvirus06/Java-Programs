@@ -13,6 +13,7 @@ public class LinkedHashSetMethods {
 		lhash.add("ambi");
 		lhash.add("hidayath");
 		lhash.add("nancy");
+		lhash.add("ambi");
 		
 		Iterator it = lhash.iterator();
 		
