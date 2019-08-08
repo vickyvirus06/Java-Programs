@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class CustomArrayList {
 
 	public static void main(String[] args) {
-	
+		System.out.println(System.nanoTime());
 		MyArrayList ml = new MyArrayList();
 		ml.add("vicky");
 		ml.add("rahul");
@@ -21,14 +21,14 @@ public class CustomArrayList {
 		ml.remove("shiva");
 		ml.add("ambi");
 		ml.add("sameer");
-		ml.removeAll();
+		
 		ml.add("rakesh");
 		ml.add("sameer");
 		ml.remove("vicky");
 		//ml.display();
 		System.out.println(ml);
 		
-		
+		System.out.println(System.nanoTime());
 
 	}
 
@@ -110,15 +110,15 @@ class MyArrayList
 	
 	@Override
 	public String toString() {
-		System.out.print("[");
+		String data="[";
 		for (int i = 0; i < obj.length-1; i++) {
 			
-			System.out.print(obj[i]);
+			
 			if(i!=obj.length-1)
-				System.out.print(" ,");
+				data=data+obj[i]+" ,";
 		}
-		System.out.print("]");
-		return " ";
+		data=data+"]";
+		return data;
 	}
 	
 }
