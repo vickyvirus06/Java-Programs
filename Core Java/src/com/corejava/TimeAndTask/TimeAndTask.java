@@ -2,6 +2,8 @@ package com.corejava.TimeAndTask;
 
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.Timer;
@@ -28,23 +30,35 @@ class EmailBody
 	EmailBody(Timer t)
 	{
 		this.t=t;
-		date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		date = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
 	}
 	
 	void message()
 	{
+		int count=0;
+		String id="";
 		
 		System.out.println(date.format(new Date()));
 		String message="";
 		System.out.println("Do You Want To Use Email Time Scheduler Program ");
-		System.out.print("\nType 'Y' for Yes and 'N' for No   :   " );
+		System.out.print("\nType 'Y' for Yes and 'N' for No   :   ");
 		String choice = input.next();
 		if(choice.equalsIgnoreCase("Y"))
 		{
-			System.out.print("\nEnter Email id :   ");
-			String id = input.next();
+			while(count!=1)
+			{
+				System.out.print("\nEnter Email Id :   ");
+				id = input.next();
+				if(id.contains("@gmail.com")||id.contains("@yahoo.com"))
+				{
+					count=1;
+				}
+				else
+					System.out.println("Wrong Email Id");
+			}
+			
 			System.out.print("\nEnter Your Message  :    ");
-			//input.useDelimiter("\n");
+			
 			input.nextLine();
 			message = input.nextLine();
 			
@@ -68,7 +82,7 @@ class EmailBody
 
 class SendMessage extends TimerTask
 {
-	SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+	SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy hh:mm:ss");
 	Timer t;
 	String message ;
 	String id;

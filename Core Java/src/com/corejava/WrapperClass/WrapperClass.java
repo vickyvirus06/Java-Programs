@@ -11,16 +11,16 @@ public class WrapperClass {
 		
 		Byte by = 20;
 		
-		System.out.println(by.MIN_VALUE);
-		System.out.println(by.MAX_VALUE);
+		System.out.println(Byte.MIN_VALUE);
+		System.out.println(Byte.MAX_VALUE);
 
 		Integer i3=30;
-		System.out.println(i3.MIN_VALUE);
-		System.out.println(i3.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.MAX_VALUE);
 	
 		Float f1=20.0f;
-		System.out.println(f1.MIN_VALUE);
-		System.out.println(f1.MAX_VALUE);
+		System.out.println(Float.MIN_VALUE);
+		System.out.println(Float.MAX_VALUE);
 		
 		Overload o =  new Overload();
 		byte a=54;
