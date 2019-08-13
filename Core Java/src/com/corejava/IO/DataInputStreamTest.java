@@ -12,6 +12,7 @@ public class DataInputStreamTest {
 		System.out.println("Enter number");
 		String mobileno = dis.readLine();
 		System.out.println(name+"\t"+mobileno);
+		dis.close();
 		
 
 	}

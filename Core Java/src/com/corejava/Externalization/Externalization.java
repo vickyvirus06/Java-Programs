@@ -38,6 +38,11 @@ public class Externalization {
 		
 		System.out.println(student2);
 		
+		fos.close();
+		oos.close();
+		fis.close();
+		ois.close();     
+		
 		
 		
 	}
@@ -65,6 +70,8 @@ class Student implements Externalizable
 		this.sid=sid;
 		this.sname=sname;
 		this.scity=scity;
+		
+		Enum e = Enum.North;
 	}
 	@Override
 	public void writeExternal(ObjectOutput out) throws IOException {
@@ -86,4 +93,8 @@ class Student implements Externalizable
 		return sid+"\t"+sname+"\t"+scity;
 	}
 	
+}
+enum Enum
+{
+	North;
 }
