@@ -89,6 +89,6 @@ class Hello
 	
 	@Override
 	public String toString() {
-		return this.a +"\t"+this.b+"\t"+this.c+"\t"+this.name;
+		return this.a +"\t"+b+"\t"+this.c+"\t"+this.name;
 	}
 }
