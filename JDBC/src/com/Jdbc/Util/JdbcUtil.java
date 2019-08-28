@@ -2,6 +2,7 @@ package com.Jdbc.Util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -32,6 +33,24 @@ public class JdbcUtil {
 			
 			if(st!=null)
 			st.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void closeConnection(Connection con,Statement st,ResultSet rs)
+	{
+		try {
+			if(con!=null)
+			con.close();
+			
+			if(st!=null)
+			st.close();
+			
+			if(rs!=null)
+				rs.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

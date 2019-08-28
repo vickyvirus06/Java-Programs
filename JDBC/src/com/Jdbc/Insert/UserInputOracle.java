@@ -33,6 +33,7 @@ public class UserInputOracle {
 				System.out.print("\nEnter Salary  :   ");
 				salary = input.nextFloat();
 				String query = "Insert into employee values("+id+",'"+name+"',"+salary+")";
+				
 				res = st.executeUpdate(query)+res;
 				
 				

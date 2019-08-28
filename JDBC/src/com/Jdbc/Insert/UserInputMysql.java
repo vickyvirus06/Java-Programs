@@ -43,7 +43,18 @@ public class UserInputMysql {
 		}
 		catch(Exception e)
 		{
+			try
+			{	
+				con.close();
+				st.close();
+				input.close();
+			}catch(Exception c)
+			{
+				c.printStackTrace();
+			}
+			
 			e.printStackTrace();
+			
 		}
 		
 		
