@@ -27,7 +27,10 @@ public class JdbcUtil {
 	public static void closeConnection(Connection con,Statement st)
 	{
 		try {
+			if(con!=null)
 			con.close();
+			
+			if(st!=null)
 			st.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

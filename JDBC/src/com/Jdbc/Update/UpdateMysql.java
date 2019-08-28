@@ -1,4 +1,4 @@
-package com.Jdbc.update;
+package com.Jdbc.Update;
 
 import java.sql.*;
 import java.sql.DriverManager;

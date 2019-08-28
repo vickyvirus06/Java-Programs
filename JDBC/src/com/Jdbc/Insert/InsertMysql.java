@@ -1,4 +1,4 @@
-package com.Jdbc.insert;
+package com.Jdbc.Insert;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,12 +17,13 @@ public class InsertMysql {
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sjt","vicky","virus");
 			
 			System.out.println("Step 3 Sql  Query ");
-			String query = "Insert into student values(101,'vicky','blore')";
-		
+			String query = "Insert into student values(105,'clara','andhra'),(106,'mohan','hyderabad')";
+			
 			System.out.println("Step 4 JDBC Statement");
 			Statement st = con.createStatement();
 			
 			System.out.println("Step 5 Execute query");
+			
 			int res = st.executeUpdate(query);
 			
 			System.out.println("Step 6 Processing result");
@@ -42,7 +43,7 @@ public class InsertMysql {
 		}
 		catch(Exception e)
 		{
-			
+			e.printStackTrace();
 		}
 
 	}

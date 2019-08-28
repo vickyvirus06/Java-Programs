@@ -1,10 +1,8 @@
-package com.Jdbc.update;
+package com.Jdbc.Insert;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.Statement;
+import java.sql.*;
 
-public class OracleUpdate {
+public class InsertOracle {
 
 	public static void main(String[] args) {
 		try
@@ -12,7 +10,7 @@ public class OracleUpdate {
 			
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","vicky","virus");
-			String query = "Update student set name = 'vicky' where name ='virus' ";
+			String query = "Insert into student values(103,'ambi','blore')";
 			Statement st = con.createStatement();
 			int res = st.executeUpdate(query);
 			
@@ -32,7 +30,6 @@ public class OracleUpdate {
 		{
 			e.printStackTrace();
 		}
-
 
 	}
 

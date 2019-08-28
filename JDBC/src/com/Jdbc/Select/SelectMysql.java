@@ -1,4 +1,4 @@
-package com.Jdbc.select;
+package com.Jdbc.Select;
 
 import java.sql.*;
 
