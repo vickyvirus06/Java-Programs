@@ -20,14 +20,9 @@ public class BatchCallable {
 			con = JdbcUtil.getOracle();
 			cs = con.prepareCall(query);
 			cs.setInt(1, 1);
-			
 			cs.addBatch();
-			
-			cs.setInt(1, 3);
-			
+			cs.setInt(1, 2);
 			cs.addBatch();
-			
-			
 			int row[]=cs.executeBatch();
 			System.out.println(Arrays.toString(row));
 			System.out.println(row.length + "   rows");

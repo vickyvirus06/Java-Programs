@@ -13,7 +13,7 @@ public class ResultSetExploring {
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;
-		int row = 1;
+		
 		
 		try
 		{
@@ -22,13 +22,13 @@ public class ResultSetExploring {
 			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
 			rs = st.executeQuery(query);
 			
-			/*System.out.println("Forward Order");
+			System.out.println("Forward Order");
 			while(rs.next())
 			{
 				System.out.println(rs.getInt(1) +"\t" +rs.getString(2)+"\t"+rs.getString(3));
 			}
 			
-			System.out.println("\nNow in reverse Order\n");
+			/*System.out.println("\nNow in reverse Order\n");
 			while(rs.previous())
 			{
 				System.out.println(rs.getInt(1)+"\t"+rs.getString(2)+"\t"+rs.getString(3));
@@ -36,6 +36,7 @@ public class ResultSetExploring {
 		*/	
 			
 			/*rs.absolute(2);
+			
 			rs.deleteRow();
 			System.out.println("Row Deleted ");
 			*/
@@ -50,8 +51,9 @@ public class ResultSetExploring {
 			*/
 			
 			
-			for(int i =1;i<=5;i++)
+			for(int i =1;i<=7;i++)
 			{
+				
 				rs.absolute(i);
 				rs.updateInt(1, i);
 				rs.updateRow();
