@@ -17,6 +17,7 @@ public class Coupling {
 		{
 			vehicle = new Car();
 			journey.startJourney(vehicle);
+		
 		}
 		else if(choice==2)
 		{

@@ -6,7 +6,15 @@ public class ClassDetails {
 		
 		Person person = new Person();
 		person.getClass1().getName();
-
+		Person person1 = new Person();
+		getDetails(person1);
+	}
+	
+	static void getDetails(Object obj)
+	{
+		
+		System.out.println(obj.getClass().getName());
+		System.out.println(obj.getClass().getSuperclass());
 	}
 
 }

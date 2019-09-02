@@ -4,8 +4,10 @@ public class ModifyObjectMethod {
 
 	public static void main(String[] args) {
 		Employee emp = new Employee(1067,"vicky");
+		
 		String name = emp.getClass().getSuperclass().getName();
 		System.out.println(name);
+	
 	}
 
 }

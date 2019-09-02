@@ -1,5 +1,7 @@
 package com.corejava.InnerClass;
 
+import com.sun.webkit.ContextMenu.ShowContext;
+
 public class LocalInnerClass {
 
 	public static void main(String[] args) {
@@ -34,5 +36,6 @@ class LocalOuter
 		System.out.println("c    :  " +c);
 	}
 	Outer.Inner inner = new Outer().new Inner();
+	
 	
 }

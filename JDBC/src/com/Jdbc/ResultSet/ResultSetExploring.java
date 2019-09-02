@@ -18,16 +18,16 @@ public class ResultSetExploring {
 		try
 		{
 			con = JdbcUtil.getOracle();
-			String query = "Select id,name,salary from employee";
+			String query = "Select * from employee";
 			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
 			rs = st.executeQuery(query);
 			
-			System.out.println("Forward Order");
+			/*System.out.println("Forward Order");
 			while(rs.next())
 			{
 				System.out.println(rs.getInt(1) +"\t" +rs.getString(2)+"\t"+rs.getString(3));
 			}
-			
+			*/
 			/*System.out.println("\nNow in reverse Order\n");
 			while(rs.previous())
 			{
@@ -50,12 +50,11 @@ public class ResultSetExploring {
 			System.out.println("Row inserted  ");
 			*/
 			
-			
 			for(int i =1;i<=7;i++)
 			{
 				
 				rs.absolute(i);
-				rs.updateInt(1, i);
+				rs.updateInt(1,i);
 				rs.updateRow();
 				System.out.println("Rows Updated");
 			}

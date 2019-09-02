@@ -13,12 +13,18 @@ public class Test {
 			emp[i]=new Employee(i);
 		}
 		
+		String name = "vicky";
+		
+		System.out.println(name.charAt(0));
 		System.gc();
 		System.out.println("-----------Now memory overflow \n");
 		for(int i=0;true;i++)
 		{
 			emp[i]=new Employee(i);
 		}
+		
+		
+		
 		
 
 	}

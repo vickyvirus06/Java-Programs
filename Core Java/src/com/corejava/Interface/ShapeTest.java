@@ -6,6 +6,7 @@ public class ShapeTest {
 		ShapeChooser shape_choose = new ShapeChooser();
 		Shape shape = shape_choose.choose();
 		shape.draw();
+		
 
 	
 } 

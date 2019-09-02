@@ -18,6 +18,8 @@ public class StringFeatures {
 		System.out.println(st3==st4);
 		System.out.println("----Now using intern method");
 		System.out.println(st3.intern()==st4.intern());
+		
+		
 	}
 
 }
