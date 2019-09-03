@@ -24,6 +24,7 @@ public class BookStoreMain {
 		System.out.println("\nAdmin Panel");
 		System.out.println("\n 1 Login");
 		System.out.println("\n 2 Register");
+		System.out.println("\n 3 Exit");
 		System.out.print("\nEnter your Choice 	:		");
 		choice = input.nextInt();
 		
@@ -37,7 +38,7 @@ public class BookStoreMain {
 			
 			Register register = new Register();
 		}
-		}while(choice!=1 && choice!=2);
+		}while(choice!=3);
 		
 		input.close();
 	}
