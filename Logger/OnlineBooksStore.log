@@ -1,0 +1,30 @@
+2019-10-05 17:23:11,787 +0530 [main] INFO  (LogConsoleTest.java:19) - Calculator Object Created  
+2019-10-05 17:23:11,793 +0530 [main] INFO  (LogConsoleTest.java:26) - Add Method Called 
+2019-10-05 17:23:11,794 +0530 [main] INFO  (LogConsoleTest.java:29) - Result Printing
+2019-10-05 17:23:11,794 +0530 [main] INFO  (LogConsoleTest.java:35) - Now in Pattern Layout 
+
+2019-10-05 17:23:11,800 +0530 [main] INFO  (LogPatternConsoleTest.java:30) - Calculator Object Created  
+2019-10-05 17:23:11,801 +0530 [main] INFO  (LogPatternConsoleTest.java:37) - Add Method Called 
+2019-10-05 17:23:11,801 +0530 [main] INFO  (LogPatternConsoleTest.java:40) - Result Printing
+2019-10-05 17:23:11,803 +0530 [main] INFO  (LogConsoleTest.java:39) - Now Saving Details to file
+2019-10-05 17:23:11,805 +0530 [main] INFO  (LogFileTest.java:39) - Calculator Object Created  
+2019-10-05 17:23:11,806 +0530 [main] INFO  (LogFileTest.java:46) - Add Method Called 
+2019-10-05 17:23:11,807 +0530 [main] INFO  (LogFileTest.java:49) - Result Printing
+2019-10-05 17:23:11,818 +0530 [main] INFO  (LogHtmlTest.java:41) - Calculator Object Created  
+2019-10-05 17:23:11,822 +0530 [main] INFO  (LogHtmlTest.java:48) - Add Method Called 
+2019-10-05 17:23:11,823 +0530 [main] INFO  (LogHtmlTest.java:51) - Result Printing
+2019-10-05 17:23:41,519 +0530 [main] INFO  (LogConsoleTest.java:19) - Calculator Object Created  
+2019-10-05 17:23:41,526 +0530 [main] INFO  (LogConsoleTest.java:26) - Add Method Called 
+2019-10-05 17:23:41,526 +0530 [main] INFO  (LogConsoleTest.java:29) - Result Printing
+2019-10-05 17:23:41,527 +0530 [main] INFO  (LogConsoleTest.java:35) - Now in Pattern Layout 
+
+2019-10-05 17:23:41,532 +0530 [main] INFO  (LogPatternConsoleTest.java:30) - Calculator Object Created  
+2019-10-05 17:23:41,533 +0530 [main] INFO  (LogPatternConsoleTest.java:37) - Add Method Called 
+2019-10-05 17:23:41,533 +0530 [main] INFO  (LogPatternConsoleTest.java:40) - Result Printing
+2019-10-05 17:23:41,534 +0530 [main] INFO  (LogConsoleTest.java:39) - Now Saving Details to file
+2019-10-05 17:23:41,536 +0530 [main] INFO  (LogFileTest.java:39) - Calculator Object Created  
+2019-10-05 17:23:41,537 +0530 [main] INFO  (LogFileTest.java:46) - Add Method Called 
+2019-10-05 17:23:41,537 +0530 [main] INFO  (LogFileTest.java:49) - Result Printing
+2019-10-05 17:23:41,549 +0530 [main] INFO  (LogHtmlTest.java:41) - Calculator Object Created  
+2019-10-05 17:23:41,553 +0530 [main] INFO  (LogHtmlTest.java:48) - Add Method Called 
+2019-10-05 17:23:41,554 +0530 [main] INFO  (LogHtmlTest.java:51) - Result Printing
